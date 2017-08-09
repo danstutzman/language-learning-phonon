@@ -45,6 +45,56 @@
     <!-- for the second page, Phonon will load its content. -->
     <pagetwo data-page="true"></pagetwo>
 
+    <pagesample data-page="true">
+      <header class="header-bar">
+        <div class="center">
+        <h1 class="title">Tabs <span class="tab-number">1</span></h1>
+        </div>
+      </header>
+      <nav class="tabs">
+        <div class="tab-indicator"></div>
+        <div class="tab-items">
+          <a class="tab-item">List</a>
+          <a class="tab-item">Fast Q</a>
+          <a class="tab-item">Repair</a>
+          <a class="tab-item">Slow Q</a>
+        </div>
+      </nav>
+      <div class="content" data-tab-contents="true" data-disable-swipe="true" data-tab-default="1" >
+        <div class="tab-content">
+          <div class="padded-full">
+            <h1>List</h1>
+            <ul class="list">
+              <li>
+                <a href="#action" class="pull-right">(4)</a>
+                <a href="#action" class="pull-left">5</a>
+                <a href="#item">
+                  <div class="item-content">
+                    <span class="title">Nouns</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="padded-full">
+            <h1>Fast Q</h1>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="padded-full">
+            <h1>Repair</h1>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="padded-full">
+            <h1>Slow Q</h1>
+          </div>
+        </div>
+      </div>
+      <button class="floating-action icon icon-add active primary top right"></button>
+    </pagesample>
 
     <!-- scripts -->
     <script src="/js/phonon.min.js"></script>
