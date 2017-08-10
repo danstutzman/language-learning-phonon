@@ -64,5 +64,16 @@ app.on({page: 'pagetwo', preventClose: true, content: 'pagetwo.html', readyDelay
   });
 });
 
+phonon.navigator().onPage('home').addEvent('tabchanged', function (tabNumber) {
+  console.log('tabchanged', tabNumber);
+  var newTitle = [
+    "List cards",
+    "Fast quiz",
+    "Repair forgotten",
+    "Slow quiz"
+  ][tabNumber - 1];
+  document.querySelector('header h1').innerHTML = newTitle;
+})
+
 // Let's go!
 app.start();
